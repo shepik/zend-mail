@@ -6,12 +6,18 @@
         "zf2",
         "mail"
     ],
-    "homepage": "https://github.com/zendframework/zend-mail",
+    "homepage": "https://github.com/aktuba/zend-mail",
     "autoload": {
         "psr-4": {
             "Zend\\Mail\\": "src/"
         }
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/aktuba/zend-mime.git"
+        }
+    ],
     "require": {
         "php": "^5.5 || ^7.0",
         "zendframework/zend-loader": "^2.5",
