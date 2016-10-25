@@ -6,17 +6,23 @@
         "zf2",
         "mail"
     ],
-    "homepage": "https://github.com/zendframework/zend-mail",
+    "homepage": "https://github.com/aktuba/zend-mail",
     "autoload": {
         "psr-4": {
             "Zend\\Mail\\": "src/"
         }
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/aktuba/zend-mime.git"
+        }
+    ],
     "require": {
         "php": "^7.0 || ^5.6",
         "ext-iconv": "*",
         "zendframework/zend-loader": "^2.5",
-        "zendframework/zend-mime": "^2.5",
+        "zendframework/zend-mime": "^2.6.0.1",
         "zendframework/zend-stdlib": "^2.7 || ^3.0",
         "zendframework/zend-validator": "^2.6"
     },
