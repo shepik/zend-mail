@@ -16,7 +16,7 @@ class Imap
     /**
      * Default timeout in seconds for initiating session
      */
-    const TIMEOUT_CONNECTION = 30;
+    const TIMEOUT_CONNECTION = 60;
 
     /**
      * socket to imap server

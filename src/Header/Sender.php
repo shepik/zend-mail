@@ -56,6 +56,7 @@ class Sender implements HeaderInterface
         );
 
         if ($hasMatches !== 1) {
+            var_dump($value);
             throw new Exception\InvalidArgumentException('Invalid header value for Sender string');
         }
 
