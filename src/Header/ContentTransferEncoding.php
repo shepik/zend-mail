@@ -91,6 +91,8 @@ class ContentTransferEncoding implements HeaderInterface
     {
         // Per RFC 1521, the value of the header is not case sensitive
         $transferEncoding = strtolower($transferEncoding);
+        
+        if ('quot' == substr($transferEncoding, 0, 4)) $transferEncoding = 'quoted-printable'; // for quot-printed
 
         if (! in_array($transferEncoding, static::$allowedTransferEncodings)) {
             throw new Exception\InvalidArgumentException(sprintf(
